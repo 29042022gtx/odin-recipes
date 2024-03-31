@@ -1,6 +1,13 @@
 :root {
     --blue: #38b9ff;
     --red: #ff2424;
+    --black: #222;
+    --dark: #444;
+    --gray: #666;
+    --light: #888;
+    --bone: #aaa;
+    --smoke: #ccc;
+    --snow: #eee;
 }
 
 * {
@@ -9,7 +16,7 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    max-width: 40em;
+    /* max-width: 40em; */
 }
 
 .title {
@@ -25,4 +32,40 @@ body {
     display: block;
     width: fit-content;
     margin: .2em;
+}
+
+.plate {
+    margin: .2em 0; padding: 0;
+}
+
+.illus {
+    object-fit:cover;
+    aspect-ratio: 3/2;
+    width: 100%;
+}
+
+.caption {
+    font-weight: normal;
+    text-align: center;
+    font-size: 1em;
+    color: var(--dark);
+    margin: 0;
+}
+
+.desc {
+    margin: .5em 0 1em;
+}
+
+.ingredients {
+    margin: .2em 0;
+}
+
+.steps {
+    margin: .2em 0;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 40em;
+    }
 }
